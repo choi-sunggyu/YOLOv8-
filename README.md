@@ -16,10 +16,12 @@ YoloCamera
 ```
 
 ## 사전 준비사항
--아래 명령어 실행
+1. 아래 명령어 실행
+```text
 pip install ultralytics fastapi uvicorn python-multipart pyngrok
 pip install -U opencv-python pillow numpy
 yolo task=detect mode=predict model=yolov8n.pt
+```
 
 ## 시작하기
 # ngrok 인증토큰 생성
@@ -29,14 +31,18 @@ yolo task=detect mode=predict model=yolov8n.pt
 
 # 로컬 실행
 1. 아래 명령어 실행
+```text
 python
 from pyngrok import ngrok
 ngrok.set_auth_token("YOUR_AUTH_TOKEN")
 print("ngrok 인증 토큰이 설정되었습니다.")
 exit()
+```
  > `{{YOUR_AUTH_TOKEN}}`은 앞서 생성한 ngrok토큰 값
 2. 아래 명령어 실행
+```text
 python run_server.py
+```
 3. 터미널 창에 생긴 주소로 모바일 접속
 
 
