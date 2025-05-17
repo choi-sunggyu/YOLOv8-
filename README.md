@@ -13,6 +13,7 @@ YoloCamera
     │  ├─css
     │  └─js
     └─templates
+```
 
 ## 사전 준비사항
 pip install ultralytics fastapi uvicorn python-multipart pyngrok
