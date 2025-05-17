@@ -6,6 +6,9 @@ from pyngrok import ngrok
 server_process = subprocess.Popen(["python", "app.py"])
 print("FastAPI 서버가 시작되었습니다.")
 
+# 서버가 시작될 때까지 잠시 대기
+time.sleep(5)
+
 # ngrok 터널 생성
 http_tunnel = ngrok.connect(3000)
 print(f"ngrok 터널이 생성되었습니다: {http_tunnel.public_url}")
