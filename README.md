@@ -3,7 +3,7 @@
 Python 및 javascript, React를 활용한 모바일 객체 인식 웹 서비스입니다.
 
 ## 애플리케이션 구조
-
+```text
 YoloCamera
 ├─runs
 │  └─detect
@@ -15,11 +15,8 @@ YoloCamera
     └─templates
 
 ## 사전 준비사항
-
-//필요한 라이브러리 설치
 pip install ultralytics fastapi uvicorn python-multipart pyngrok
 pip install -U opencv-python pillow numpy
-//YOLOv8 모델 다운로드
 yolo task=detect mode=predict model=yolov8n.pt
 
 ## 시작하기
