@@ -16,6 +16,7 @@ YoloCamera
 ```
 
 ## 사전 준비사항
+-아래 명령어 실행
 pip install ultralytics fastapi uvicorn python-multipart pyngrok
 pip install -U opencv-python pillow numpy
 yolo task=detect mode=predict model=yolov8n.pt
