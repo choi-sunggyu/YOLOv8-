@@ -2,6 +2,9 @@
 
 Python 및 javascript, React를 활용한 모바일 객체 인식 웹 서비스입니다.
 
+# 기술스택
+FastAPI, React, YOLOv8, OpenCV
+
 ## 애플리케이션 구조
 ```text
 YoloCamera
